@@ -1,12 +1,19 @@
-<p id="notice"><%= notice %></p>
+<div class="row">
+	<div class="col-md-4">
+		<%= link_to new_task_path, remote: true do %>
+      <button class="btn btn-success">
+      	<i class="fa fa-plus-circle"></i> Add Task
+      </button>
+    <% end %>
 
-<%= link_to 'New Task', new_task_path, remote: true %>
-
-<div id="task-form" style="display:none;"></div>
-
-<h2>Listing Tasks</h2>
-<div id="tasks">
-  <ul>
-    <%= render @tasks %>
-  </ul>
+		<div id="task-form" style="display:none;"></div>
+	</div>
+	<div class="col-md-7 col-md-offset-1">
+		<h2>My Tasks</h2>
+		<div id="tasks">
+		  <div class="row">
+		    <%= render @tasks %>
+		  </div>
+		</div>
+	</div>
 </div>

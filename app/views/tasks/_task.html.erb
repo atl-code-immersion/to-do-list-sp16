@@ -1,2 +1,9 @@
-<li><%= task.description %></li>
-<li><%= task.deadline %></li>
+<div class="col-md-12">
+	<div class="well">
+		<h3><%= link_to task.description, task, remote: true, method: :delete, data: { confirm: 'Are you sure?' } %></h3>
+		<p><%= task.deadline %></p>
+		<p class="pull-right">
+			<%= link_to "Edit", edit_task_path(task), remote: true, class: "btn btn-warning" %>
+		</p>
+	</div>
+</div>

@@ -37,8 +37,16 @@ GEM
       thread_safe (~> 0.3, >= 0.3.4)
       tzinfo (~> 1.1)
     arel (6.0.3)
+    autoprefixer-rails (6.3.3)
+      execjs
+      json
     binding_of_caller (0.7.2)
       debug_inspector (>= 0.0.1)
+    bootstrap-sass (3.3.6)
+      autoprefixer-rails (>= 5.2.1)
+      sass (>= 3.3.4)
+    bootstrap3-datetimepicker-rails (4.0.0)
+      momentjs-rails (>= 2.8.1)
     builder (3.2.2)
     byebug (8.2.5)
     coffee-rails (4.1.1)
@@ -52,6 +60,8 @@ GEM
     debug_inspector (0.0.2)
     erubis (2.7.0)
     execjs (2.6.0)
+    font-awesome-rails (4.5.0.0)
+      railties (>= 3.2, < 5.0)
     globalid (0.3.6)
       activesupport (>= 4.1.0)
     i18n (0.7.0)
@@ -72,6 +82,8 @@ GEM
     mime-types-data (3.2016.0221)
     mini_portile2 (2.0.0)
     minitest (5.8.4)
+    momentjs-rails (2.11.1)
+      railties (>= 3.1)
     multi_json (1.11.3)
     nokogiri (1.6.7.2)
       mini_portile2 (~> 2.0.0.rc2)
@@ -143,10 +155,14 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  bootstrap-sass
+  bootstrap3-datetimepicker-rails (~> 4.0.0)
   byebug
   coffee-rails (~> 4.1.0)
+  font-awesome-rails
   jbuilder (~> 2.0)
   jquery-rails
+  momentjs-rails (>= 2.9.0)
   rails (= 4.2.5.1)
   sass-rails (~> 5.0)
   sdoc (~> 0.4.0)
