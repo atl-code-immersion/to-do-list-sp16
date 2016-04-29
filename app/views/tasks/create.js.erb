@@ -1,2 +1,4 @@
 $('#tasks').html("<%= j (render @tasks) %>");
+$('#tasks').html("<%= j (render @upcoming_tasks %>");
 $('#task-form').slideUp(350);
+$('#new_btn').removeClass('invisible');
